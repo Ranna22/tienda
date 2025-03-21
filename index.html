@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAGNOLIA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="im/mag.png" alt="Flores izquierda" class="logo-lado">
+            MAGNOLIA
+            <img src="im/mag.png" alt="Flores derecha" class="logo-lado">
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Novedades</a></li>
+                <li><a href="#">Categorías</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#"><img src="im/usu.png" alt="Usuario" width="30"></a></li>
+                <li><a href="#"><img src="im/car.png" alt="Carrito"><div id="cart-modal" class="modal">
+                    <div class="modal-contenido">
+                        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+                        <div id="cart-container"></div>
+                    </div>
+                </div>
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Productos en descuento</h2>
+        <div class="productos" id="productos-container"></div>
+    </main>
+
+    <footer>
+        <p>Contacto: 123-456-7890 | correo@magnolia.com | Dirección: Calle Magnolia #123</p>
+    </footer>
+
+    <script src="productos.js"></script>
+</body>
+</html>
